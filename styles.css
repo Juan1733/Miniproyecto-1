@@ -39,7 +39,7 @@ nav {
     outline: none;
     appearance: none;
     background: none;
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     cursor: pointer;
 }
@@ -99,24 +99,34 @@ nav {
 
 
 /*Tablet*/
-@media (min-width: 800px){
+@media (min-width: 768px){
+    
     .hamburger, .mobile-menu{
         display: none;
     }
     .menu {
         display: flex;
     }
+    .menu a {
+        padding: 8px 8px;
+        margin: 0 10px;
+        font-size: 18px;
+    }
 }
 
 /*Desktop*/
 @media (min-width: 1024px) {
-    /*.hamburger{
+    .hamburger, .mobile-menu{
         display: none;
     }
     .menu {
         display: flex;
     }
-    .mobile-menu {
-        display: none;
-    }*/
+    .menu a {
+        padding: 8px 16px;
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 30px;
+    }
 }
