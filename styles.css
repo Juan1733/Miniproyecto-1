@@ -108,6 +108,7 @@ nav {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-color: rgb(32, 32, 32);
 }
 
 .slides {
@@ -209,6 +210,55 @@ nav {
     background: rgb(6, 161, 189);
 }
 
+#experience {
+    font-size: 25px;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.exp-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    min-width: 300px;
+    width: 30vw;
+    height: fit-content;
+    background-color: rgb(17, 2, 100);
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project img {
+   min-width: 300px;
+   width: 30vw;
+   min-height: 200px;
+   height: 20vh;
+   object-fit: cover;
+}
+
+.project a {
+    color: white;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.project p {
+    font-size: 18px;
+}
+
+.description {
+    padding: 2rem 0;
+}
+
+.description div {
+    padding-bottom: 1.5rem;
+}
+
 /*Tablet*/
 @media (min-width: 768px){
     
@@ -222,6 +272,13 @@ nav {
         padding: 8px 8px;
         margin: 0 10px;
         font-size: 18px;
+    }
+    #experience {
+        font-size: 36px;
+        margin: 2rem 0;
+    }
+    .project a {
+        font-size: 32px;
     }
 }
 
