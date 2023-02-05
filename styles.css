@@ -142,7 +142,7 @@ nav {
 }
 
 .manual-btn {
-    border: 2px solid rgb(17, 2, 100);
+    border: 2px solid rgb(6, 161, 189);
     padding: 5px;
     border-radius: 10px;
     z-index: 9;
@@ -150,7 +150,64 @@ nav {
     transition: 1s;
 }
 
+.manual-btn:not(:last-child) {
+    margin-right: 30px;
+}
 
+.manual-btn:hover {
+    background: rgb(6, 161, 189);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 80vh;
+}
+
+.navigation-auto div {
+    border: 2px solid rgb(6, 161, 189);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: rgb(6, 161, 189);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: rgb(6, 161, 189);
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: rgb(6, 161, 189);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: rgb(6, 161, 189);
+}
 
 /*Tablet*/
 @media (min-width: 768px){
